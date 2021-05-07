@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ea_iv_urun_resim_li"
+        android:layout_width="192dp"
+        android:layout_height="193dp"
+        android:layout_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/ea_txt_urun_isim_li"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="7dp"
+        android:text="Ürün İsmi"
+        android:textColor="#212121"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/ea_iv_urun_resim_li"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ea_txt_urun_platform_li"
+        android:layout_width="152dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:text="Platformlar"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/ea_iv_urun_resim_li"
+        app:layout_constraintTop_toBottomOf="@+id/ea_txt_urun_kategori_li" />
+
+    <TextView
+        android:id="@+id/ea_txt_urun_kategori_li"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:text="Kategori"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/ea_iv_urun_resim_li"
+        app:layout_constraintTop_toBottomOf="@+id/ea_txt_urun_miktar_li" />
+
+    <TextView
+        android:id="@+id/ea_txt_urun_aciklama_li"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:text="Ürün Açıklama"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/ea_iv_urun_resim_li"
+        app:layout_constraintTop_toBottomOf="@+id/ea_txt_urun_fiyat_li" />
+
+    <TextView
+        android:id="@+id/ea_txt_urun_miktar_li"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:text="Ürün Miktar"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/ea_iv_urun_resim_li"
+        app:layout_constraintTop_toBottomOf="@+id/ea_txt_urun_aciklama_li" />
+
+    <TextView
+        android:id="@+id/ea_txt_urun_fiyat_li"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:text="Ürün Fiyat"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/ea_iv_urun_resim_li"
+        app:layout_constraintTop_toBottomOf="@+id/ea_txt_urun_isim_li" />
+
+    <Button
+        android:id="@+id/ea_btn_SiparisVer_li"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Sipariş Ver"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ea_iv_urun_resim_li" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
