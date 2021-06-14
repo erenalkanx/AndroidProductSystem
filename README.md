@@ -2,5 +2,5 @@
 Android Product System
 
 Eren Alkan
-Tokat Gasiosmanpasa University
+Gasiosmanpasa University
 Computer Engineering
